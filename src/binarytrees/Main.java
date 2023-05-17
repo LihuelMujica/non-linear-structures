@@ -10,6 +10,11 @@ public class Main {
         tree.insert(6);
         tree.insert(8);
         tree.insert(10);
+        System.out.println(tree.find(7));
+        System.out.println(tree.find(4));
+        System.out.println(tree.find(1));
+        System.out.println(tree.find(10));
+        System.out.println(tree.find(24));
         System.out.println("Done");
     }
 }

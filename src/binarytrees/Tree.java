@@ -46,4 +46,26 @@ public class Tree {
 
 
     }
+
+    public boolean find(int value) {
+        if ( root == null ) {
+            return false;
+        }
+
+        Node current = root;
+
+        while ( current != null ) {
+            if ( current.value == value ) {
+                return true;
+            }
+            if ( value > current.value ) {
+                current = current.rightChild;
+            }
+            else {
+                current = current.leftChild;
+            }
+        }
+
+        return false;
+    }
 }
